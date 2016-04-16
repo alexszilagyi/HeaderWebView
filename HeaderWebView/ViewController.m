@@ -28,6 +28,11 @@
     [self.emaiView setFullScreenDelegate:self];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+  [super viewWillAppear:animated];
+  self.edgesForExtendedLayout = UIRectEdgeNone;
+}
+
 #pragma mark -
 #pragma mark - EmailViewDelegate
 
